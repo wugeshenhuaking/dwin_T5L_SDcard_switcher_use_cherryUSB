@@ -1,0 +1,495 @@
+Dependencies for Project 'AT32F403ARGT7_usb_msc_useCherryUSB', Target 'AT32F403ARGT7_usb_msc_useCherryUSB': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC5
+F (..\src\main.c)(0x6980B9B8)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\inc\at32f403a_407_wk_config.h)(0x6980B9B7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+I (..\inc\wk_acc.h)(0x6980B9B7)
+I (..\inc\wk_debug.h)(0x6980B9B7)
+I (..\inc\wk_sdio.h)(0x6980B9B7)
+I (..\inc\wk_usart.h)(0x6980B9B7)
+I (..\inc\wk_usbfs.h)(0x6980B9B7)
+I (..\inc\wk_system.h)(0x6980B9B8)
+F (..\src\at32f403a_407_wk_config.c)(0x6980B9D2)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_wk_config.o --omf_browse .\objects\at32f403a_407_wk_config.crf --depend .\objects\at32f403a_407_wk_config.d)
+I (..\inc\at32f403a_407_wk_config.h)(0x6980B9B7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\src\at32f403a_407_int.c)(0x6980B9B8)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_int.o --omf_browse .\objects\at32f403a_407_int.crf --depend .\objects\at32f403a_407_int.d)
+I (..\inc\at32f403a_407_int.h)(0x6980B9B8)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+I (..\inc\wk_system.h)(0x6980B9B8)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+F (..\src\wk_system.c)(0x6980B9B8)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\wk_system.o --omf_browse .\objects\wk_system.crf --depend .\objects\wk_system.d)
+I (..\inc\wk_system.h)(0x6980B9B8)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\src\wk_acc.c)(0x6980B9B7)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\wk_acc.o --omf_browse .\objects\wk_acc.crf --depend .\objects\wk_acc.d)
+I (..\inc\wk_acc.h)(0x6980B9B7)
+I (..\inc\at32f403a_407_wk_config.h)(0x6980B9B7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\src\wk_debug.c)(0x6980B9B7)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\wk_debug.o --omf_browse .\objects\wk_debug.crf --depend .\objects\wk_debug.d)
+I (..\inc\wk_debug.h)(0x6980B9B7)
+I (..\inc\at32f403a_407_wk_config.h)(0x6980B9B7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\src\wk_sdio.c)(0x6980B9B7)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\wk_sdio.o --omf_browse .\objects\wk_sdio.crf --depend .\objects\wk_sdio.d)
+I (..\inc\wk_sdio.h)(0x6980B9B7)
+I (..\inc\at32f403a_407_wk_config.h)(0x6980B9B7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\src\wk_usart.c)(0x6980B9B7)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\wk_usart.o --omf_browse .\objects\wk_usart.crf --depend .\objects\wk_usart.d)
+I (..\inc\wk_usart.h)(0x6980B9B7)
+I (..\inc\at32f403a_407_wk_config.h)(0x6980B9B7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\src\wk_usbfs.c)(0x6980B9B7)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\wk_usbfs.o --omf_browse .\objects\wk_usbfs.crf --depend .\objects\wk_usbfs.d)
+I (..\inc\wk_usbfs.h)(0x6980B9B7)
+I (..\inc\at32f403a_407_wk_config.h)(0x6980B9B7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdio.h)(0x5D9B348A)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_crm.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_crm.o --omf_browse .\objects\at32f403a_407_crm.crf --depend .\objects\at32f403a_407_crm.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_gpio.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_gpio.o --omf_browse .\objects\at32f403a_407_gpio.crf --depend .\objects\at32f403a_407_gpio.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_usart.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_usart.o --omf_browse .\objects\at32f403a_407_usart.crf --depend .\objects\at32f403a_407_usart.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_pwc.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_pwc.o --omf_browse .\objects\at32f403a_407_pwc.crf --depend .\objects\at32f403a_407_pwc.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_flash.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_flash.o --omf_browse .\objects\at32f403a_407_flash.crf --depend .\objects\at32f403a_407_flash.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_exint.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_exint.o --omf_browse .\objects\at32f403a_407_exint.crf --depend .\objects\at32f403a_407_exint.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_misc.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_misc.o --omf_browse .\objects\at32f403a_407_misc.crf --depend .\objects\at32f403a_407_misc.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_usb.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_usb.o --omf_browse .\objects\at32f403a_407_usb.crf --depend .\objects\at32f403a_407_usb.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_acc.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_acc.o --omf_browse .\objects\at32f403a_407_acc.crf --depend .\objects\at32f403a_407_acc.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_sdio.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_sdio.o --omf_browse .\objects\at32f403a_407_sdio.crf --depend .\objects\at32f403a_407_sdio.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (..\..\libraries\drivers\src\at32f403a_407_debug.c)(0x696E41F9)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\at32f403a_407_debug.o --omf_browse .\objects\at32f403a_407_debug.crf --depend .\objects\at32f403a_407_debug.d)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
+F (.\startup_at32f403a_407.s)(0x6980B9B6)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include--pd "__UVISION_VERSION SETA 542" --pd "AT32F403ARGT7 SETA 1"--list .\listings\startup_at32f403a_407.lst --xref -o .\objects\startup_at32f403a_407.o --depend .\objects\startup_at32f403a_407.d)
+F (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.c)(0x696E41F7)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-IC:\Users\TommyRIckWu\AppData\Local\Arm\Packs\ArteryTek\AT32F403A_407_DFP\2.1.9\Device\Include-D__UVISION_VERSION="542" -DAT32F403ARGT7 -DAT32F403ARGT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F403A_V1-o .\objects\system_at32f403a_407.o --omf_browse .\objects\system_at32f403a_407.crf --depend .\objects\system_at32f403a_407.d)
+I (..\..\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x696E41F7)
+I (D:\Software\Coding_Tools\IDE\keil5.41a\ARM\ARMCC5\include\stdint.h)(0x5D9B3488)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x696E41F7)
+I (..\..\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x696E41F7)
+I (..\..\libraries\drivers\inc\at32f403a_407_def.h)(0x696E41F9)
+I (..\inc\at32f403a_407_conf.h)(0x6980B9B8)
+I (..\..\libraries\drivers\inc\at32f403a_407_acc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_crm.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_debug.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_exint.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_flash.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_gpio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_misc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_pwc.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_sdio.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usart.h)(0x696E41F9)
+I (..\..\libraries\drivers\inc\at32f403a_407_usb.h)(0x696E41F9)
