@@ -65,7 +65,20 @@
 
 /* private user code ---------------------------------------------------------*/
 /* add user code begin 0 */
+void usb_dc_low_level_init(uint8_t busid)
+{
+    /* enable otg clock */
+//  crm_periph_clock_enable(CRM_OTGFS1_PERIPH_CLOCK, TRUE);
+//    /* enable otg irq */
+//  nvic_irq_enable(OTGFS1_IRQn, 0, 0);
 
+}
+
+void usb_dc_low_level_deinit(uint8_t busid)
+{
+
+
+}
 /* add user code end 0 */
 
 /**
