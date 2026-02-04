@@ -1682,3 +1682,4 @@ typedef struct
 #define PCD_GET_EP_DBUF1_CNT(USBx, bEpNum)     (PCD_GET_EP_RX_CNT((USBx), (bEpNum)))
 
 #endif
+  

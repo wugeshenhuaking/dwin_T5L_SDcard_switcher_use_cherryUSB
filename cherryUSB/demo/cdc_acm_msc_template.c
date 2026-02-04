@@ -7,6 +7,8 @@
 #include "usbd_cdc_acm.h"
 #include "usbd_msc.h"
 
+#include "at32_sdio.h"
+
 #if CONFIG_USBDEV_EP_NUM < 6
 #error endpoint number is too small for this demo, please try other chips
 #endif
@@ -299,21 +301,54 @@ typedef struct
 
 BLOCK_TYPE mass_block[BLOCK_COUNT];
 
+//void usbd_msc_get_cap(uint8_t busid, uint8_t lun, uint32_t *block_num, uint32_t *block_size)
+//{
+//    *block_num = 1000; //Pretend having so many buffer,not has actually.
+//    *block_size = BLOCK_SIZE;
+//}
+//int usbd_msc_sector_read(uint8_t busid, uint8_t lun, uint32_t sector, uint8_t *buffer, uint32_t length)
+//{
+//    if (sector < 10)
+//        memcpy(buffer, mass_block[sector].BlockSpace, length);
+//    return 0;
+//}
+
+//int usbd_msc_sector_write(uint8_t busid, uint8_t lun, uint32_t sector, uint8_t *buffer, uint32_t length)
+//{
+//    if (sector < 10)
+//        memcpy(mass_block[sector].BlockSpace, buffer, length);
+//    return 0;
+//}
+
+
 void usbd_msc_get_cap(uint8_t busid, uint8_t lun, uint32_t *block_num, uint32_t *block_size)
 {
-    *block_num = 1000; //Pretend having so many buffer,not has actually.
-    *block_size = BLOCK_SIZE;
+//    *block_num = 1000; //Pretend having so many buffer,not has actually.
+//    *block_size = BLOCK_SIZE;
+  
+
+    uint8_t temp_lun = lun;
+  
+  
+//      *block_num =sd_card_info.card_capacity/512;
+  *block_num =16695297;
+      *block_size = BLOCK_SIZE;
 }
 int usbd_msc_sector_read(uint8_t busid, uint8_t lun, uint32_t sector, uint8_t *buffer, uint32_t length)
 {
-    if (sector < 10)
-        memcpy(buffer, mass_block[sector].BlockSpace, length);
+//    if (sector < BLOCK_COUNT)
+//        memcpy(buffer, mass_block[sector].BlockSpace, length);
+  
+  sd_read_disk(buffer, sector, length/512);
     return 0;
 }
 
 int usbd_msc_sector_write(uint8_t busid, uint8_t lun, uint32_t sector, uint8_t *buffer, uint32_t length)
 {
-    if (sector < 10)
-        memcpy(mass_block[sector].BlockSpace, buffer, length);
+//    if (sector < BLOCK_COUNT)
+//        memcpy(mass_block[sector].BlockSpace, buffer, length);
+  
+    sd_write_disk(buffer, sector, length/512);
+
     return 0;
 }

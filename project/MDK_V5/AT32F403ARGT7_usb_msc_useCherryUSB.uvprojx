@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>AT32F403ARGT7, USE_STDPERIPH_DRIVER, AT_START_F403A_V1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\libraries\drivers\inc;..\..\libraries\cmsis\cm4\core_support;..\..\libraries\cmsis\cm4\device_support;..\inc;..\..\cherryUSB\class\cdc;..\..\cherryUSB\class\msc;..\..\cherryUSB\common;..\..\cherryUSB\core;..\..\cherryUSB\port\dwc2;..\..\cherryUSB\demo</IncludePath>
+              <IncludePath>..\..\libraries\drivers\inc;..\..\libraries\cmsis\cm4\core_support;..\..\libraries\cmsis\cm4\device_support;..\inc;..\..\cherryUSB\class\cdc;..\..\cherryUSB\class\msc;..\..\cherryUSB\common;..\..\cherryUSB\core;..\..\cherryUSB\port\dwc2;..\..\cherryUSB\demo;..\..\cherryUSB;..\..\bsp\dwt;..\..\bsp\sdio</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -428,6 +428,11 @@
               <FileType>1</FileType>
               <FilePath>..\src\wk_usbfs.c</FilePath>
             </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\rtc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -439,9 +444,24 @@
               <FilePath>..\..\libraries\drivers\src\at32f403a_407_crm.c</FilePath>
             </File>
             <File>
+              <FileName>at32f403a_407_tmr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_tmr.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_rtc.c</FilePath>
+            </File>
+            <File>
               <FileName>at32f403a_407_gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\libraries\drivers\src\at32f403a_407_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_i2c.c</FilePath>
             </File>
             <File>
               <FileName>at32f403a_407_usart.c</FileName>
@@ -454,9 +474,39 @@
               <FilePath>..\..\libraries\drivers\src\at32f403a_407_pwc.c</FilePath>
             </File>
             <File>
+              <FileName>at32f403a_407_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_dma.c</FilePath>
+            </File>
+            <File>
               <FileName>at32f403a_407_flash.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\libraries\drivers\src\at32f403a_407_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_wwdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_wwdt.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_wdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_wdt.c</FilePath>
             </File>
             <File>
               <FileName>at32f403a_407_exint.c</FileName>
@@ -479,6 +529,26 @@
               <FilePath>..\..\libraries\drivers\src\at32f403a_407_acc.c</FilePath>
             </File>
             <File>
+              <FileName>at32f403a_407_can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_can.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_xmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_xmc.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_emac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_emac.c</FilePath>
+            </File>
+            <File>
               <FileName>at32f403a_407_sdio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\libraries\drivers\src\at32f403a_407_sdio.c</FilePath>
@@ -487,6 +557,11 @@
               <FileName>at32f403a_407_debug.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\libraries\drivers\src\at32f403a_407_debug.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32f403a_407_bpr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\libraries\drivers\src\at32f403a_407_bpr.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -506,6 +581,31 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>bsp</GroupName>
+          <Files>
+            <File>
+              <FileName>at32_sdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\bsp\sdio\at32_sdio.c</FilePath>
+            </File>
+            <File>
+              <FileName>at32_sdio.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\bsp\sdio\at32_sdio.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_dwt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\bsp\dwt\bsp_dwt.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_dwt.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\bsp\dwt\bsp_dwt.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>cherryUSB_core</GroupName>
           <Files>
             <File>
@@ -517,6 +617,11 @@
               <FileName>usbd_core.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\cherryUSB\core\usbd_core.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\cherryUSB\usb_config.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -543,6 +648,26 @@
               <FileType>5</FileType>
               <FilePath>..\..\cherryUSB\class\msc\usbd_msc.h</FilePath>
             </File>
+            <File>
+              <FileName>usb_cdc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\cherryUSB\class\cdc\usb_cdc.h</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_cdc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\cherryUSB\class\cdc\usbd_cdc.h</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_cdc_acm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\cherryUSB\class\cdc\usbd_cdc_acm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_cdc_acm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\cherryUSB\class\cdc\usbd_cdc_acm.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -552,21 +677,6 @@
               <FileName>usb_dc_dwc2.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\cherryUSB\port\dwc2\usb_dc_dwc2.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_glue_at.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\cherryUSB\port\dwc2\usb_glue_at.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>cherryUSB_demo</GroupName>
-          <Files>
-            <File>
-              <FileName>cdc_acm_msc_template.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\cherryUSB\demo\cdc_acm_msc_template.c</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -575,7 +685,7 @@
                   <RVCTOtherData>0</RVCTOtherData>
                   <ModuleSelection>0</ModuleSelection>
                   <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>0</AlwaysBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
                   <GenerateAssemblyFile>2</GenerateAssemblyFile>
                   <AssembleAssemblyFile>2</AssembleAssemblyFile>
                   <PublicsOnly>2</PublicsOnly>
@@ -620,9 +730,136 @@
               </FileOption>
             </File>
             <File>
+              <FileName>usb_glue_at.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\cherryUSB\port\dwc2\usb_glue_at.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>usb_dc_fsdev.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\cherryUSB\port\fsdev\usb_dc_fsdev.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_fsdev_reg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\cherryUSB\port\fsdev\usb_fsdev_reg.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>cherryUSB_demo</GroupName>
+          <Files>
+            <File>
+              <FileName>cdc_acm_msc_template.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\cherryUSB\demo\cdc_acm_msc_template.c</FilePath>
+            </File>
+            <File>
               <FileName>msc_ram_template.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\cherryUSB\demo\msc_ram_template.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
             </File>
           </Files>
         </Group>

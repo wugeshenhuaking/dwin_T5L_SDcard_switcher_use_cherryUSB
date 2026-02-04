@@ -35,6 +35,7 @@
 
 /* private includes ----------------------------------------------------------*/
 /* add user code begin private includes */
+#include "at32_sdio.h"
 
 /* add user code end private includes */
 
@@ -60,6 +61,8 @@
 
 /* private function prototypes --------------------------------------------*/
 /* add user code begin function prototypes */
+  extern void msc_ram_init(uint8_t busid, uintptr_t reg_base);
+  extern void cdc_acm_msc_init(uint8_t busid, uintptr_t reg_base);
 
 /* add user code end function prototypes */
 
@@ -104,7 +107,8 @@ int main(void)
   /* nvic config. */
   wk_nvic_config();
 
-  /* timebase config. */
+  /* timebase config for
+     void wk_delay_ms(uint32_t delay); */
   wk_timebase_init();
 
   /* init usart1 function. */
@@ -120,14 +124,37 @@ int main(void)
   wk_usbfs_init();
 
   /* add user code begin 2 */
+  sd_error_status_type sd_status = sd_init();
 
+  if(sd_status != SD_OK)
+  {
+      // SD卡初始化失败！
+      // 可以在这里亮一个红灯，方便你排查硬件问题
+      while(1)
+      {
+        printf("sd card init failure!!\n");
+        printf("sd card sd_status = %d\n",sd_status);
+        wk_delay_ms(1000);
+      }
+  }
+  else 
+  {
+    printf("sd card init success!!\n");
+    printf("sd card sd_status = %d\n",sd_status);
+    printf("Start Test...\r\n");
+   /* 调用我给你的只读测试函数 */
+//    SD_Safe_Read_Test();
+  }
+  
+//  msc_ram_init(0, USBFS_BASE);
+  cdc_acm_msc_init(0, USBFS_BASE);
   /* add user code end 2 */
 
   while(1)
   {
     /* add user code begin 3 */
-    printf("hello world \n");
-    wk_delay_ms(1000);
+//    printf("hello world \n");
+//    wk_delay_ms(1000);
     /* add user code end 3 */
   }
 }

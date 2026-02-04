@@ -105,37 +105,76 @@ __WEAK void wk_timebase_handler(void)
 }
 
 /* support printf function, usemicrolib is unnecessary */
-#if (__ARMCC_VERSION > 6000000)
-  __asm (".global __use_no_semihosting\n\t");
-  void _sys_exit(int x)
+#if (__ARMCC_VERSION >= 6010050)
+  int _sys_open(const char *path, int mode)
   {
-    UNUSED(x);
+    UNUSED(path);
+    UNUSED(mode);
+    return 0;  
   }
-  /* __use_no_semihosting was requested, but _ttywrch was */
-  void _ttywrch(int ch)
+  int _sys_close(int fd)
   {
-    UNUSED(ch);
+    UNUSED(fd);
+    return 0;
   }
-  FILE __stdout;
+  int _sys_write(int fd, const unsigned char *buf,
+                 unsigned len, int mode)
+  {
+    UNUSED(fd);
+    UNUSED(buf);
+    UNUSED(len);
+    UNUSED(mode);
+    return 0;   
+  }
+  int _sys_read(int fd, unsigned char *buf,
+                unsigned len, int mode)
+  {
+    UNUSED(fd);
+    UNUSED(buf);
+    UNUSED(len);
+    UNUSED(mode);
+    return 0;       
+  }
+  int _sys_istty(int fd)
+  {
+    UNUSED(fd);
+    return 1;
+  }
+  int _sys_seek(int fd, long pos)
+  {
+    UNUSED(fd);
+    UNUSED(pos);
+    return -1;
+  }
+  int _sys_ensure(int fd)
+  {
+    UNUSED(fd);
+    return 0;
+  }
+  long _sys_flen(int fd)
+  {
+    UNUSED(fd);
+    return 0;
+  }
 #else
- #ifdef __CC_ARM
+  #ifdef __CC_ARM
   #pragma import(__use_no_semihosting)
   struct __FILE
   {
     int handle;
   };
   FILE __stdout;
-  void _sys_exit(int x)
-  {
-    UNUSED(x);
-  }
-  /* __use_no_semihosting was requested, but _ttywrch was */
-  void _ttywrch(int ch)
-  {
-    UNUSED(ch);
-  }
- #endif
+  #endif
 #endif
+
+void _sys_exit(int fd)
+{
+  UNUSED(fd);
+}
+void _ttywrch(int ch)
+{
+  UNUSED(ch);
+}
 
 #if defined (__GNUC__) && !defined (__clang__)
   #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)

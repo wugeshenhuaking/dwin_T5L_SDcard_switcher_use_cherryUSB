@@ -27,6 +27,7 @@
 /* includes ------------------------------------------------------------------*/
 #include "at32f403a_407_int.h"
 #include "wk_system.h"
+
 /* private includes ----------------------------------------------------------*/
 /* add user code begin private includes */
 
@@ -227,16 +228,16 @@ void SysTick_Handler(void)
   * @param  none
   * @retval none
   */
-void SDIO2_IRQHandler(void)
-{
-  /* add user code begin SDIO2_IRQ 0 */
+//void SDIO2_IRQHandler(void)
+//{
+//  /* add user code begin SDIO2_IRQ 0 */
 
-  /* add user code end SDIO2_IRQ 0 */
+//  /* add user code end SDIO2_IRQ 0 */
 
-  /* add user code begin SDIO2_IRQ 1 */
+//  /* add user code begin SDIO2_IRQ 1 */
 
-  /* add user code end SDIO2_IRQ 1 */
-}
+//  /* add user code end SDIO2_IRQ 1 */
+//}
 
 /**
   * @brief  this function handles USB Map Low handler.
@@ -246,7 +247,8 @@ void SDIO2_IRQHandler(void)
 void USBFS_MAPL_IRQHandler(void)
 {
   /* add user code begin USBFS_MAPL_IRQ 0 */
-
+  void USBD_IRQHandler(uint8_t busid);
+  USBD_IRQHandler(0);
   /* add user code end USBFS_MAPL_IRQ 0 */
 
   /* add user code begin USBFS_MAPL_IRQ 1 */
